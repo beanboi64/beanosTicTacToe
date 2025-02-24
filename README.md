@@ -80,7 +80,7 @@ To run the game locally:
 
 ## License
 
-   -This project is licensed under the [MIT LICENSE](LICENSE.md) . Feel free to use, modify, and distribute the code as per the terms of the license.
+   -This project is licensed under the [MIT LICENSE](LICENS) . Feel free to use, modify, and distribute the code as per the terms of the license.
 
 ---
 
