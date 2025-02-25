@@ -38,6 +38,7 @@ Beano's Tic Tac Toe is an interactive and feature-rich implementation of the cla
 4. **Play**: Click on empty cells to place your symbol ('X' or 'O'). The game will automatically check for winners after each move.
 5. **Winning Conditions**: Align three (or four, depending on the grid size) of your symbols in a row, column, or diagonal to win!
 6. **Draws**: If all cells are filled without a winner, the game ends in a draw.
+7. **Important**: When playing on mobile press 'New Game' to start the game.
 
 ---
 
