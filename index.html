@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Beano's Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=music_note,music_off" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile-styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Beano's <span id="blueColor" class="blueColor">T</span>ic <span id="redColor" class="redColor">T</span>ac <span id="blueColor" class="blueColor">T</span>oe</h1>
+        <div id="game-controls-toggle" class="setting-icons">
+            <button id="settings-toggle"><i class="fa-solid fa-gear"></i></button>
+            <button id="background-sound-toggle"><span class="material-symbols-outlined note">music_note</span></button>
+            <button id="help-button" title="Help"><i class="fa-solid fa-info"></i></button>
+        </div>
+    </div>
+    <div class="container">
+        <div id="game-board" class="board"></div>
+        <div id="game-controls" class="controls-modal">
+            <button id="close-settings" class="close-mod">&#10008;</button>
+            <div class="control-group">
+                <button id="new-game">New Game</button>
+                <button id="ai-toggle">Beano: On</button>
+            </div>
+            <div class="control-group">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="mode">Mode:</label>
+                <select id="mode">
+                    <option value="ai" selected>Player v Beano</option>
+                    <option value="player">PvP</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="grid-size">Grid Size:</label>
+                <select id="grid-size">
+                    <option value="3x3" selected>3x3</option>
+                    <option value="4x4">4x4</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <button id="leaderboard">Statistics</button>
+            </div>
+            <div class="control-group">
+                <label for="volume-control">Volume:</label>
+                <input type="range" id="volume-control" min="0" max="1" step="0.1" value="1">
+            </div>
+            <div id="timer">Time: 00:00:00</div>
+        </div>
+        <div id="tutorial-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>How to Play Beano's <span class="blueColor">T</span>ic <span class="redColor">T</span>ac <span class="blueColor">T</span>oe</h2>
+                <p>
+                    Welcome to Beano's Tic Tac Toe! Here's how to play:
+                </p>
+                <ol>
+                    <li><strong>Select Mode:</strong> Choose between Player vs Beano (AI) or PvP (Player vs Player).</li>
+                    <li><strong>Select Difficulty:</strong> If playing against Beano, choose a difficulty level (Easy, Medium, Hard).</li>
+                    <li><strong>Select Grid Size:</strong> Play on a 3x3 or 4x4 grid.</li>
+                    <li><strong>Take Turns:</strong> Players alternate turns placing their symbol ('X' or 'O') on the grid.</li>
+                    <li><strong>Win Condition:</strong> Align 3 (or 4, depending on grid size) of your symbols in a row, column, or diagonal to win!</li>
+                    <li><strong>Draws:</strong> If all cells are filled without a winner, the game ends in a draw.</li>
+                    <li style="color: red; font-style: italic;"><strong>Important:</strong> When playing on mobile press 'New Game' to start the game.</li>
+                </ol>
+                <p>
+                    Enjoy the game and have fun!
+                </p>
+            </div>
+        </div>
+        <audio id="win-player-sound" src="sounds/win_player.mp3"></audio>
+        <audio id="win-ai-sound" src="sounds/win.mp3"></audio>
+        <audio id="pvp_winner" src="sounds/pvp_winner.mp3"></audio>
+        <audio id="draw-sound" src="sounds/draw.mp3"></audio>
+        <audio id="move-sound" src="sounds/move.mp3"></audio>
+        <audio id="background-sound" src="sounds/background.mp3" loop></audio>
+    </div>
+    <script src="script.js"></script>
+    <script src="logic.js"></script>
+    <script src="controls.js"></script>
+    <script src="mobile.js"></script>
+</body>
+</html>
