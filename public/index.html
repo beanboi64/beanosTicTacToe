@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Beano's Tic Tac Toe</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=music_note,music_off" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile-styles.css">
 </head>
 <body>
     <div class="header">
@@ -59,7 +60,7 @@
         <div id="tutorial-modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h2>How to Play Beano's <span id="blueColor" class="blueColor">T</span>ic <span id="redColor" class="redColor">T</span>ac <span id="blueColor" class="blueColor">T</span>oe</h2>
+                <h2>How to Play Beano's <span class="blueColor">T</span>ic <span class="redColor">T</span>ac <span class="blueColor">T</span>oe</h2>
                 <p>
                     Welcome to Beano's Tic Tac Toe! Here's how to play:
                 </p>
@@ -82,10 +83,10 @@
         <audio id="draw-sound" src="sounds/draw.mp3"></audio>
         <audio id="move-sound" src="sounds/move.mp3"></audio>
         <audio id="background-sound" src="sounds/background.mp3" loop></audio>
-    </div>>
     </div>
     <script src="script.js"></script>
     <script src="logic.js"></script>
     <script src="controls.js"></script>
+    <script src="mobile.js"></script>
 </body>
 </html>
