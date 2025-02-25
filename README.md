@@ -86,5 +86,7 @@ To run the game locally:
 
 ## Contact
 
-- GitHub: @beanboi64
-- Email: kingaga009@gmail.com
+- **Email**: billywaynejr007@gmail.com
+- **GitHub**: [beanboi64](https://github.com/beanboi64)
+- **Instagram**: [krissattack0](https://www.instagram.com/krissattack0)
+- **X**: [krissattacko](https://x.com/krissattack0)
